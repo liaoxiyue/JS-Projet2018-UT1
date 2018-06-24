@@ -905,62 +905,78 @@ canvas{
 
 .enchere_bg1{
 	float:left;
-	width:140px;
-	height:140px;
-	background:url(../Images/cours7/sell1.jpg);
+	width:149px;
+	height:149px;
+	background:url(../Images/cours7/sell1.png);
+	background-size:149px 149px;
 	
 }
 
 .enchere_bg2{
 	float:left;
-	width:140px;
-	height:140px;
-	background:url(../Images/cours7/sell2.jpg) no-repeat;
+	width:149px;
+	height:149px;
+	background:url(../Images/cours7/sell2.png);
+	background-size:149px 149px;
 	
 }
 .enchere_bg3{
 	float:left;
-	width:140px;
-	height:140px;
-	background:url(../Images/cours7/sell3.jpg) no-repeat;
+	width:149px;
+	height:149px;
+	background:url(../Images/cours7/sell3.png);
+	background-size:149px 149px;
 	
 }
 
 .enchere_bg4{
 	float:left;
-	width:140px;
-	height:140px;
-	background:url(../Images/cours7/sell4.jpg) no-repeat;
+	width:149px;
+	height:149px;
+	background:url(../Images/cours7/sell4.png);
+	background-size:149px 149px;
 	
+}
+.venteprix{
+	position:absolute;
+	top:115px;
 }
 
 .venteprix tr td{
 	text-align:center;
 	height:40px;
-	width:140px;
+	width:149px;
 	line-height:40px;
 	font-size:25px;
+	color:white;
 }
 
 h3{
+	position:absolute;
+	top:152px;
+	width:598px;
 	text-align:center;
 	font-size:1.5em;
-	margin-top:5px;
+	margin-top:15px;
 	border-top:dashed 2px #83AE9B;
 	border-bottom:dashed 2px #83AE9B;
 }
 
 .achatprix{
-	height:100px;
+	position:absolute;
+	top:210px;
+	height:120px;
 	width:598px;
-	margin-top:5px;
 }
 .achatprix img{
 	display:block;
 	margin:auto;
+	height:120px;
 }
 
 .chooseprix{
+	position:absolute;
+	top:320px;
     margin:20px 49px;
 	width:500px;
 }
@@ -981,8 +997,8 @@ h3{
 
 .checkprix{
 	position:absolute;
-	top:350px;
-	right:100px;
+	top:2px;
+	right:50px;
 	width:150px;
 	height:40px;
 	font-size:20px;
@@ -991,16 +1007,7 @@ h3{
 	
 }
 
-.voirprix{
-	margin-left:10px;
-	width:130px;
-	height:30px;
-	font-size:20px;
-	border:dashed 2px #333;
-	border-radius:7px;
-	background-color:#F9CDAE;
-}
-.changeprix{
+.voirprix, .changeprix{
 	margin-left:10px;
 	width:130px;
 	height:30px;
@@ -1013,7 +1020,7 @@ h3{
 .cours7_return{
 	position:absolute;
 	top:350px;
-	left:400px;
+	left:420px;
 	width:130px;
 	height:30px;
 	font-size:20px;
@@ -1021,7 +1028,7 @@ h3{
 	background-color:#F9CDAE;
 }
 
-.checkprix:hover,.changeprix:hover,.voirprix:hover,.cours7_return:hover{
+.checkprix:hover,.changeprix:hover,.voirprix:hover{
 	background-color:#F69A9A;
 }
 
@@ -1071,13 +1078,10 @@ h3{
 }
 .showprix_1{
 	position:absolute;
-	top:20px;
-	width:498px;
-	height:104px;
-	padding:40px 50px;
-	font-size:25px;
-	text-align:center;
-	background:url(../Images/cours7/bg.jpg) no-repeat;
+	top:50px;
+	width:598px;
+	height:119px;
+	background:url(../Images/cours7/bg.png);
 }
 
 .showprix_2{
@@ -1094,7 +1098,16 @@ h3{
 }
 
 .prixmoyen{
+	position:absolute;
+	top:50px;
+	left:430px;
 	font-size:50px;
+	
+}
+
+#showprix{
+	display:none;
+
 }
 
 #voir_mecanisme{
@@ -1292,7 +1305,7 @@ button:hover{
 }
 
 .buttonmiddle{
-	top:251px;
+	top:210px;
 	left:149px;
 }
 
