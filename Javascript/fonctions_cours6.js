@@ -1,13 +1,12 @@
-
 var targetid="";
-	var dropid=""; 
-	var dragelem=new Array();
-	var droparray = new Array();
-	var score=new Array();
-	var scoreoriginal=new Array();
-	scoreoriginal[1]=5;
-	scoreoriginal[2]=3;
-	scoreoriginal[3]=4;
+var dropid=""; 
+var dragelem=new Array();
+var droparray = new Array();
+var score=new Array();
+var scoreoriginal=new Array();
+scoreoriginal[1]=5;
+scoreoriginal[2]=3;
+scoreoriginal[3]=4;
 
 function calcul(){
 	dragelem[1]=document.getElementById("drag1");
@@ -17,7 +16,6 @@ function calcul(){
 	droparray[2]=document.getElementById("drop2");
 	droparray[3]=document.getElementById("drop3");
 	
-	console.log();
 	var i="";
 	for (i=1;i<4;i++){
 		if (dragelem[i].parentNode.id==="drop1"){
@@ -121,7 +119,6 @@ function drop(ev)
 	calcul();
 	winner();
 }
-	
 	
 function cleardrop(){
 	var source=document.getElementById("source")

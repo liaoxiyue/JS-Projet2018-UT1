@@ -1,7 +1,5 @@
 /*définir le style commun pour body, list et title*/
 
-/*html{background-color:skyblue;}*/
-
 *{
 	padding:0;
 	margin:0;
@@ -61,14 +59,11 @@ h2{
 	top:0;
 	height:900px;
 }
-
 .top_img{
     overflow: hidden;
 	position: relative;
 	height:900px;
-	
 }
-
 .top img{
     min-width: 1320px;
 	max-width:1650px;
@@ -84,23 +79,18 @@ h2{
     /* CSS3 standard */
     opacity:0.8;
 	z-index:1;
-
 }
-
 .top_title h1{
 	font-size:50px;
 	color:#003E6B;
 	margin:10px 0;
 	font-family: Novecentosanwide-4;
 }
-
 .top_title h2{
 	font-size:25px;
 	color:#003E6B;
 	margin-bottom:10px;
 }
-
-
 
 /*cadrerle menu*/
 
@@ -111,26 +101,21 @@ h2{
 	background-color:#003E6B;
 	border-radius: 10px;
 	padding:0 5%;
-	}
-	
+}	
 .menu li{
 	list-style-type:none;
 	text-align:center;
 	width:33.33%;
 	margin:auto;
-	
 }
-
 .menu ul{
 	height:65px;
 }
-
 .menu>ul>li{
 	position:relative;
 	float:left;
 	display:block;
 }
-
 .menu ul li a:link,.menu ul li a:visited{
 	display:block;
 	text-decoration:none;
@@ -144,14 +129,12 @@ h2{
 	border-right:solid 1px #003E6B;
 	border-bottom:none;
 }
-
 .menu ul li a:hover{
 	background-color:#ffffff;
 	color:#003E6B;
 	border-bottom:solid 1px #003E6B;
 
 }
-
 .menu>ul>li>ul { 
 	position: absolute;	
 	width:100%;
@@ -162,7 +145,6 @@ h2{
 	z-index: 2;
 
 }
-
 .menu ul li ul li{
 	width:100%;
 }
@@ -174,6 +156,7 @@ h2{
 }
 
 /* le style de border en coins*/
+
 .titleframe{
 	margin:auto;
 	margin-top:30px;
@@ -184,7 +167,6 @@ h2{
 	height:90px;
 	text-align:center;
 }
-
 .titleframe:before, .titleframe:after, .title:before, .title:after {
  content:" ";
  position:absolute;
@@ -216,7 +198,6 @@ h2{
  border-width:3px 3px 0 0;
  border-top-right-radius:10px;
 }
-
 .title p{
 	margin:10px;
 }
@@ -227,29 +208,23 @@ h2{
 	padding:50px 5%;
 	
 }
-
-
 .description p{
 	font-size:1.25em;
 	text-align:justify;
 	line-height:2em;
 	margin:30px 0;
 }
-
 .description img{
 	width:500px;
 	float:left;
 	margin:50px 3em 30px 0;
-	
 }
-
 .description a{
 	text-decoration: none;
 	color:#003E6B;
 	font-style:italic;
 	
 }
-
 .description a:hover{
 	font-weight:bold;
 	text-decoration:underline;
@@ -268,37 +243,30 @@ h2{
 	margin:10px 0 60px;
 }
 .bibliographie{
-	
 	margin:0px;
 	padding:50px 10%;
 }
-
-
 .bibliographie p{
 	font-size:1.25em;
 	text-align:justify;
 	line-height:2em;
 	margin:30px 0;
 }
-
 .bibliographie a{
 	text-decoration: none;
 	color:#003E6B;
 	font-style:italic;
 	
 }
-
 .bibliographie a:hover{
 	font-weight:bold;
 	text-decoration:underline;
 }
-
 .bibliographie ul {
 	font-size:20px;
 	line-height:150%;
 	padding-left:60px;
 }
-
 .bibliographie ul li{
 	list-style:url("../Images/book-icon.png");
 	list-style-position: inside;
@@ -317,35 +285,30 @@ h2{
     border-radius: 50px;
  }
  
- /*le style et la structure du contenue dans la deuxieme partie*/ 
+/*le style et la structure du contenue dans la deuxieme partie*/ 
  
 .cadrecours{
 	margin:auto;
 	width:1320px;
 }
-
 .cours_gauche{
-
 	float:left;
 	width:660px;
 	height:500px;
- }
- 
+}
 .cours_droit{
 	margin-left:660px;
 	height:500px;
 	width:660px;
 	border-left:2px solid #003E6B;
 
- }
- 
+}
 .cours_contenue{
 	position:absolute;
 	width:inherit;
 	margin-top:130px;
 	z-index:1;
 }
-
 .cours_contenue p{
 	font-size:1.25em;
 	text-align:center;
@@ -353,7 +316,6 @@ h2{
 	padding:20px 10px;
 	line-height: 30px;
 }
-
 .cours_animation{
 	position:absolute;
 	height:440px;
@@ -361,7 +323,6 @@ h2{
 	margin:30px;
 	z-index:1;
 }
-
 .cours_animation img{
 	display:block;
 	height:440px;
@@ -382,8 +343,6 @@ h2{
 	font-size: 14px/100%;
 	padding: .5em 2em .55em;  
     text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: 2em;   
-    -moz-border-radius: 2em;  
     border-radius: 2em;  
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);  
     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);  
@@ -393,8 +352,6 @@ h2{
     background: #003E6B;
 	font-style:normal;
 }
-
-
 .support:hover{
 	text-decoration:none;
 	font-weight:normal;
@@ -405,6 +362,7 @@ h2{
 }
 
 /*le style du contenue dans le pied de la page*/ 
+
 .foot{
 	position:relative;
 	height:50px;
@@ -417,17 +375,19 @@ h2{
 	font-size:0.95em;
 	border-radius: 10px;
 }
+
 /*cadrer les photos de cours recherche WEB*/
 
 #cours-recherche{
 	overflow:hidden;	
 }
-
 #cours-recherche img{
 	height:436px;
 	width: 594px;
 }
+
 /*cadrer les photos de cours reseaux sociaux*/
+
 canvas{
 	border:solid 1px #003E6B;
 }
@@ -435,7 +395,6 @@ canvas{
 	top:330px;
 	left:150px;
 }
-
 #canvasbtnbegin{
 	top:340px;
 	left:520px;
@@ -448,7 +407,6 @@ canvas{
     border-radius: 3px; 
 	background-color:lightgrey;
 }
-
 #canvasbtnstop{
 	top:380px;
 	left:520px;
@@ -461,7 +419,9 @@ canvas{
     border-radius: 3px; 
 	background-color:#333;	
 }
+
 /*cadrer les photos de cours logique et web semantique 1*/
+
 .cours3{
 	position:absolute;
 	height:440px;
@@ -499,7 +459,6 @@ canvas{
 	z-index: 300;
 }
 
-
 /* cadrer la vidéo de cours logique et web semantique 2*/
 
 #img_video {
@@ -507,17 +466,14 @@ canvas{
 	left:0;
 	position: relative;
 }
-
 #imgcours, #imgvideo, #imgDBpedia{
 	top:0;
 	left:0;
 	position: absolute;
 }
-
 #imgvideo, #imgDBpedia{
 	opacity: 0;
 }
-
 .vedioarea{
 	float: left;
 	width: 1110.2px;
@@ -525,7 +481,6 @@ canvas{
 	margin-left:30px;
 	margin-top:60px;
 }
-
 .textarea{
 	margin-left:1170px;
 	margin-top: 60px;
@@ -534,17 +489,14 @@ canvas{
 	color: lightgrey;
 	
 }
-
 .textarea h2{
 	color:lightgrey;
 	font-size:2em;
 	margin-bottom:20px;
 }
-
 .textarea p{
 	line-height:1.5em;
 }
-
 
 /*définir le layer*/
 
@@ -555,7 +507,6 @@ canvas{
 	top:0;
 	position: absolute;
 }
-
 #box{
 	background-color: black;
 	opacity: 0.8;
@@ -566,6 +517,7 @@ canvas{
 }
 
 /*definir la structure du cours 5*/
+
 .cours5,.cours7{
 	position:absolute;
 	height:440px;
@@ -576,13 +528,11 @@ canvas{
 	z-index:1;
 	
 }
-
 #premier{
 	height:440px;
 	width:600px;
 
 }
-
 #premier ul li{
 	float: left; 
 	width: 147.5px;
@@ -590,7 +540,6 @@ canvas{
 	margin: 1px 1px; 
 	list-style: none;
 }
-
 #premier ul li img{
 	display:block;
 	margin:auto;
@@ -600,9 +549,6 @@ canvas{
 	margin-top:111px;
 	z-index:7;
 }
-
-
-
 .filmtitle{
 	position:absolute;
 	top:107px;
@@ -617,11 +563,9 @@ canvas{
 	padding-top:100px;
 	z-index:-2;
 }
-
 #ft1{
 	left:-37.25px;
 }
-
 #ft2{
 	left:112px;
 }
@@ -635,19 +579,16 @@ canvas{
 	opacity:1;
 	z-index:8;
 }
-
 .filmvu{
 	position:absolute;
 	transition: 0.5s;
 	height:440px;
 	
 }
-
 .cadrefilm:hover img{
 	transform: scale(1.5); 
 	position: relative; 	
 }
-
 .stars{
 	position:absolute;
 	bottom:100px;
@@ -665,12 +606,10 @@ canvas{
     height: 20px;
     background: url(../Images/cours5/star.png) 0 -20px no-repeat;
 }
-
 .cadrefilm:hover .stars{
 	opacity:1;
 	z-index:9;
 }
-
 .cadrefilm p{
 	position:absolute;
 	top:385px;
@@ -680,7 +619,6 @@ canvas{
 	height:40px;
 	line-height:40px;
 }
-
 .rightarrow{
 	position:absolute;
 	display:block;
@@ -692,11 +630,9 @@ canvas{
 	border-left:solid 25px lightgrey;
 	
 }
-
 .rightarrow:hover{
 	border-left:solid 25px #333;
 }
-
 #cours3_instruction{
 	position:absolute;
 	top:10px;
@@ -716,19 +652,16 @@ canvas{
 	height:50px;
 	font-size:1.1em;
 }
-
 .filmfiches{
 	width:598px;
 	height:195px;
 }
-
 .filmfiches #recom1{
 	display:block;
 	margin:auto;
 	width:130px;
 	height:188.5px;
 }
-
 .leftarrow{
 	position:absolute;
 	display:block;
@@ -739,12 +672,9 @@ canvas{
 	border:solid 20px transparent;
 	border-right:solid 25px lightgrey;
 }
-
 .leftarrow:hover{
-	
 	border-right:solid 25px #333;
 }
-
 .voir{
 	position:absolute;
 	display:block;
@@ -754,12 +684,10 @@ canvas{
 	height:50px;
 	z-index:3;
 }
-
 .voir img{
 	width:50px;
 	height:50px;
 }
-
 .cours5_instruction{
 	position:absolute;
 	padding:5px 20px;
@@ -786,13 +714,11 @@ canvas{
 	opacity:0;
 	z-index:-1;
 }
-
 .tbtheorie{
 	margin-top:70px;
 	border-collapse:collapse;
 	width:602px;
 }
-
 .tbtheorie tr td{
 	width:98px;
 	height:48px;
@@ -804,6 +730,7 @@ canvas{
 }
 
 /*définir la structure du cours 6 décisions collectives   */
+
 #decision_collective {
 	background: url(../Images/cours6/picture.png) no-repeat;
 	position:absolute;
@@ -812,14 +739,10 @@ canvas{
 	margin:30px;
 	border:solid 1px #003E6B;
 }
-
-/*表格接受地点*/
 .trash {
 	position: absolute;
 	height: 80px;
 }
-
-
 #drop1 {
 	position: absolute;
 	left:84px;
@@ -827,7 +750,6 @@ canvas{
  	width: 80px;
 	height: 80px;
 }
-
 #drop2 {
 	position: absolute;
 	left:169px;
@@ -835,7 +757,6 @@ canvas{
  	width: 80px;
 	height: 80px;
 }
-
 #drop3 {
 	position: absolute;
 	left:255px;
@@ -843,10 +764,6 @@ canvas{
  	width: 80px;
 	height: 80px;
 }
-
-/*表格处的浮块*/
-
-
 #source{
 	position: absolute;
 	float: left;
@@ -855,17 +772,11 @@ canvas{
 	top: 351px;
 	left:90px;
 }
-
 #source img {
 	cursor: move;
 	margin:4px;
 	box-shadow: 0 0 18px rgb(255, 102, 0);
 }
-
-
-
-/*展示分数*/
-
 #scoresfinals {
 	position: absolute;
 	width: 200px;
@@ -874,7 +785,6 @@ canvas{
 	margin-top: 40px;
 	margin-left: 360px;
 }
-
 #score {
 	border-radius: 25px;
 	border-color: rgb(251, 68, 23);
@@ -885,12 +795,10 @@ canvas{
 	text-align: center;
 	font-size: 22px;
 }
-
 .returnbtn{
 	position: absolute;
 	cursor: pointer;
 }
-
 #delete{
 	top:360px;
 	left:20px;
@@ -899,7 +807,6 @@ canvas{
 	border-radius: 50%;
 	box-shadow: 0 0 18px rgb(255, 102, 0);
 }
-
 
 /*cadrer les photos de cours cours enchere*/
 
@@ -911,7 +818,6 @@ canvas{
 	background-size:149px 149px;
 	
 }
-
 .enchere_bg2{
 	float:left;
 	width:149px;
@@ -928,7 +834,6 @@ canvas{
 	background-size:149px 149px;
 	
 }
-
 .enchere_bg4{
 	float:left;
 	width:149px;
@@ -937,7 +842,6 @@ canvas{
 	background-size:149px 149px;
 	
 }
-
 h3{
 	position:absolute;
 	top:152px;
@@ -948,7 +852,6 @@ h3{
 	border-top:dashed 2px #83AE9B;
 	border-bottom:dashed 2px #83AE9B;
 }
-
 .achatprix{
 	position:absolute;
 	top:210px;
@@ -960,18 +863,15 @@ h3{
 	margin:auto;
 	height:120px;
 }
-
 .chooseprix{
 	position:absolute;
 	top:320px;
     margin:20px 49px;
 	width:500px;
 }
-
 .chooseprix p{
 	font-size:30px;
 }
-
 .txtprix{
     display: inline-block;
     margin-bottom: 1em;
@@ -981,7 +881,6 @@ h3{
     text-align: center;
 	border:none;
 }
-
 .checkprix{
 	position:absolute;
 	top:2px;
@@ -993,7 +892,6 @@ h3{
 	background-color:#F9CDAE;
 	
 }
-
 .voirprix, .changeprix{
 	margin-left:10px;
 	width:130px;
@@ -1003,7 +901,6 @@ h3{
 	border-radius:7px;
 	background-color:#F9CDAE;
 }
-
 .cours7_return{
 	position:absolute;
 	top:350px;
@@ -1014,11 +911,9 @@ h3{
 	border:dashed 2px #333;
 	background-color:#F9CDAE;
 }
-
 .checkprix:hover,.changeprix:hover,.voirprix:hover{
 	background-color:#F69A9A;
 }
-
 .slider_prix{
 	margin-left:50px;
 	width:400px;
@@ -1031,12 +926,9 @@ h3{
 	background: -o-linear-gradient(bottom,#F9CDAE,#83AE9B,#F9CDAE);
 	/* Firefox 3.6 - 15 */
 	background: -moz-linear-gradient(bottom,#F9CDAE,#83AE9B,#F9CDAE);
-	/* 标准的语法 */
 	background: linear-gradient(to bottom, #F9CDAE,#83AE9B,#F9CDAE); 
-	position:relative;
-	
+	position:relative;	
 }
-  
 .move_prix{
 	position: absolute;
 	display: block;
@@ -1047,8 +939,7 @@ h3{
 	background-color:#F69A9A;
 	top:-2.5px;
 	margin-left:-15px;
-}  
-        
+}       
 .minprix, .maxprix {
     position: absolute;
 }
@@ -1058,10 +949,8 @@ h3{
 .maxprix {
     right: -40px;
 }
-
 #showprix{
 	display:none;
-
 }
 .showprix_1{
 	position:absolute;
@@ -1070,7 +959,6 @@ h3{
 	height:119px;
 	background:url(../Images/cours7/bg.png);
 }
-
 .showprix_2{
 	position:absolute;
 	top:200px;
@@ -1089,14 +977,10 @@ h3{
 	top:50px;
 	left:430px;
 	font-size:50px;
-	
 }
-
 #showprix{
 	display:none;
-
 }
-
 #voir_mecanisme{
 	display:none;
 	position:absolute;
@@ -1111,19 +995,17 @@ h3{
 	text-align:center;
 	margin-top:10px;
 }
-
 #voir_mecanisme table tr td{
 	border:solid 2px #F9CDAE;
 	height:30px;
 	width:100px;
 }
-
 #voir_mecanisme ul li{
 	list-style: decimal;
 	padding-bottom:15px;
 }
-/*la structure du cours 8 allocation des ressources*/
 
+/*la structure du cours 8 allocation des ressources*/
 
 .cours8{
 	position:absolute;
@@ -1132,7 +1014,6 @@ h3{
 	margin:30px;
 	border:solid 1px #003E6B;
 }
-
 .cours8_title{
 	width:598px;
 	margin-top:20px;
@@ -1140,7 +1021,9 @@ h3{
 	font-size:30px;
 	
 }
+
 /*la zone de resultats*/
+
 .jeures{
 	position:absolute;
 	width:400px;
@@ -1148,11 +1031,9 @@ h3{
 	padding:10px 20px; 
 	font-size:20px;
 }
-
 .jeures p{
-	margin:10px;
+	margin:5px;
 }
-
 .sumidcadre{
 	position:absolute;
 	float:right;
@@ -1161,7 +1042,6 @@ h3{
 .sumid{
 	 display: inline;
 }
-
 .borderpourcentage{
 	position:absolute;
 	height:15px;
@@ -1171,7 +1051,6 @@ h3{
 	border-radius:7px;
 	margin-left:30px;
 }
-
 .pourcentage{
 	height:15px;
 	width:0;
@@ -1182,10 +1061,8 @@ h3{
 	background: -o-linear-gradient(bottom,lightgrey,#003E6B,lightgrey);
 	/* Firefox 3.6 - 15 */
 	background: -moz-linear-gradient(bottom,lightgrey,#003E6B,lightgrey);
-	/* 标准的语法 */
 	background: linear-gradient(to bottom, lightgrey,#003E6B,lightgrey); 
 }
-
 .sumvalue{
 	 display: inline;
 }
@@ -1204,21 +1081,19 @@ h3{
 	width:400px;
 	padding:0 25px;
 }
-
 .ressource{
 	border:dotted 1px #003E6B;
 	border-radius:5px;
 	padding:5px 10px;
 }
-
 .ressource img{
 	width:50px;
 }
-
 #cours8_check{
-	margin-top:20px;
-	margin-left:80px;
-	background-color:lightgrey;
+	position:absolute;
+	top:60px;
+	left:250px;
+	background-color:#F9CDAE;
 	color:#333;
 	height:35px;
 	width:160px;
@@ -1226,11 +1101,9 @@ h3{
 	font-size:20px;
 	
 }
-
 #cours8_check:hover{
 	background-color:#F4A460;
 }
-
 .regledujeu{
 	position:absolute;
 	right:10px;
@@ -1254,22 +1127,18 @@ h3{
 	background: rgba(0, 0, 0, 0.5);
 	opacity:0;
 }
-
-
 .cours_animation .zonelayer:hover{
-	
     animation: fade-in 0.5s ease 0s 1;    
     -webkit-animation: fade-in 0.5s ease 0s 1;
     -moz-animation: fade-in 0.5s ease 0s 1;
     -o-animation: fade-in 0.5s ease 0s 1;
     -ms-animation: fade-in 0.5s ease 0s 1;
   
-    /*规定动画的最后状态为结束状态*/
-   animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
     -webkit-animation-fill-mode: forwards;  
-      -o-animation-fill-mode: forwards; 
-      -ms-animation-fill-mode: forwards;   
-      -moz-animation-fill-mode: forwards; 
+    -o-animation-fill-mode: forwards; 
+    -ms-animation-fill-mode: forwards;   
+    -moz-animation-fill-mode: forwards; 
 }
 
 /*le style des bouttons*/
@@ -1287,29 +1156,22 @@ button{
 	color: #ffffff;   
     background: #003E6B;
 	border:none;
-	
 }
-
 button:hover{
 	background-color:#603E6B;
 	transition:0.5s ;
-	-moz-transition: 0.5s ;	/* Firefox 4 */
-	-webkit-transition: 0.5s ;	/* Safari 和 Chrome */
+	-moz-transition: 0.5s ;
+	-webkit-transition: 0.5s ;
 }
-
-
 .buttontop{
 	left:149px;
 	top:148px;
 }
-
 .buttonbottom{
 	top:241px;
 	left:149px;
 }
-
 .buttonmiddle{
 	top:210px;
 	left:149px;
 }
-

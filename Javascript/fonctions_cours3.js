@@ -5,7 +5,7 @@ $(document).ready(function(){
 	var end=false;
 	var resultat=false;
 	var back=false;
-	
+	//changer l'indication
 	function changeIndication(){
 		if(lampeleft === true && lamperight === true && aladdin === true && end === false){
 		$("#indication1").hide();
@@ -54,7 +54,8 @@ $(document).ready(function(){
 			$("#lampeR").fadeTo(0,0);
 			$("#lampeRHover").fadeTo(0,1);
 			$("#dialogR").fadeTo(500,1);
-			$("#dialogR").css("z-index",100);				lamperight=true;
+			$("#dialogR").css("z-index",100);				
+			lamperight=true;
 			}
 		});
 	$("#lampeR").mouseout(function(){
@@ -147,7 +148,8 @@ $(document).ready(function(){
 			$("#dialogR").fadeTo(0,0);
 			$("#lampeR").css("cursor","defalt");
 			$("#return").fadeTo(500,1);
-			$("#icon").fadeTo(500,1);						$("#return").css("z-index",300);
+			$("#icon").fadeTo(500,1);						
+			$("#return").css("z-index",300);
 			$("#Aladdin").fadeTo(0,0);
 			$("#AladdinHover").fadeTo(0,0);
 			$("#indication2").hide();
@@ -155,7 +157,6 @@ $(document).ready(function(){
 		}
 		}
 	});	
-	
 	
 	$("#icon").mouseover(function(){
 		

@@ -1,4 +1,4 @@
-//保存film的评分
+//préserver le score de chaque film
 var film = new Array();
 //保存推荐电影的分数
 var note = new Array();
@@ -7,22 +7,19 @@ for(i=0;i<5;i++){
 	note[i]=0; 
 }
 
-
-//计算推荐电影和已评分电影之间的相关性la matrice de similarité film/film
-var sim = [[-0.42,0.22,-0.13,0.53],[-0.03,0.54,-0.52,0.59],[0.62,0.95,0.67,0.25],[0.20,0.92,0.06,0.38]];
+//préserver la matrice de similarité film/film
+var sim = [[-0.80,0.57,0.33,-0.44],[0.08,0.78,-0.59,-0.18],[0.51,-0.32,-0.74,0.94],[0.85,-0.10,-0.51,0.15]];
 var sommesim = new Array();
 for(i=0;i<5;i++){
 	sommesim[i]=0;
 }
-
+//faire la somme de chaque score pour un film évalué
 for (i=0; i <4; i++){
 	for (j=0;j<4;j++){
 		sommesim[i+1]=sommesim[i+1]+Math.abs(sim[i][j]);
 	}
-}
-console.log(sim);
-	console.log(sommesim);	
-//星星评分
+}	
+//éclair les stars
 $(function () {
     var objs = $(".stars a");
         $(objs).mouseover(function () {
@@ -47,7 +44,7 @@ $(function () {
 			$(this).parent().next("p").html(film[idn] + '.0');
         });
     });
-//星星点击事件
+	
 function sets(ix, obj) {
     $(obj).parent().children().each(function (ik) {
         if (ik <= ix) {
@@ -57,10 +54,10 @@ function sets(ix, obj) {
         }
     });
 }
-//翻下一页并显示推荐的电影	
+//entre dans la page suivante	
 function nextpage(){
 	var evaluer=true;
-	//判断是否评价了所有电影
+	//vérifier si tous les films sont évalués
 	for(i=1;i<5;i++){
 		if(film[i] === 0){
 			evaluer=false;
@@ -69,28 +66,19 @@ function nextpage(){
 		}
 		
 	}
-	//计算每个没有评价过的电影的相关性
-	//Calculer le score de recommandation normalisé pour chacun des produits pas évalués
-		console.log(film);	
-	console.log(note);
+	//Calculer le score de recommandation normalisé
 	if(evaluer=true){
 		for (i=0; i <4; i++){
 			for (j=0;j<4;j++){
 				note[i+1]=note[i+1]+film[j+1]*sim[i][j];
-				console.log(note);
 			}
 			note[i+1]=note[i+1]/sommesim[i+1];
 		}
-		
-	
-	
-		
-		
-	//对四部电影进行排序
+	//mise en ordre ces quatre films que on veut recommender
 		var order=[[1,2,3,4],[note[1],note[2],note[3],note[4]]];
 		var min=note[1];
 		var minindex=1;
-		//比较第一个和其他三个
+		
 		for(i=1;i<4;i++){
 			if(order[1][i]<min){
 				min=order[1][i];
@@ -102,7 +90,7 @@ function nextpage(){
 			}
 			
 		}
-		//比较第二个和其他两个
+		
 		min=order[1][1];
 		minindex=order[0][1];
 		
@@ -117,7 +105,7 @@ function nextpage(){
 			}
 			
 		}
-		//比较第三个和第四个
+		
 		min=order[1][2];
 		minindex=order[0][2];
 		
@@ -130,7 +118,7 @@ function nextpage(){
 			order[0][2]=minindex;
 		}
 		
-		//换图片
+		//changer l'affiche selon le film qui a le score le plus haut
 		var obj = document.getElementById("recom1");
 			
 		for(i=0;i<4;i++){
@@ -146,17 +134,13 @@ function nextpage(){
 			}else{
 				obj.src="Images/cours5/starwar.jpg";
 			}
-		}
-		console.log(order);
-		
+		}		
 		document.getElementById("premier").style.display="none";
 		document.getElementById("deuxieme").style.display="block";
-	}
-	
-		
+	}	
 }
 	
-//返回上一页
+//retourner à la dernière page 
 function lastpage(){
 	document.getElementById("deuxieme").style.display="none";
 	document.getElementById("premier").style.display="block";
@@ -164,8 +148,7 @@ function lastpage(){
 		note[i]=0; 
 	}
 }
-
-//播放原理
+//contrôler le boutton qui ouvrir ou fermer la troisième page
 var voir=true;
 function voirtheorie(){
 	if(voir==true){
@@ -177,7 +160,7 @@ function voirtheorie(){
 		document.getElementById("troisieme").style.zIndex="-1";
 		voir=true;
 	}
-	//给表格添加数据
+	//ajouter les données dans la table
 	var txt = new Array;
 	txt[1] = document.getElementById("eva1");
 	txt[2] = document.getElementById("eva2");
@@ -194,7 +177,4 @@ function voirtheorie(){
 		txt[i+1].innerHTML=film[i+1];
 		res[i+1].innerHTML=note[i+1].toFixed(2);
 	}
-	console.log(note);
-	
 }
-
