@@ -141,10 +141,10 @@ function nextpage(){
 				obj.src="Images/cours5/miserables.jpg";
 				
 			}else if(order[0][i]==3){
-				obj.src="Images/cours5/split.jpg";
+				obj.src="Images/cours5/blackswan.jpg";
 				
 			}else{
-				obj.src="Images/cours5/logan.jpg";
+				obj.src="Images/cours5/starwar.jpg";
 			}
 		}
 		console.log(order);

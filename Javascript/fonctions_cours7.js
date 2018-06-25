@@ -15,11 +15,6 @@ var nombre = 0;
 	
 $(function(){
 	
-	//显示卖家价格
-	$(".venteprix1").text(venteprix[0]);
-	$(".venteprix2").text(venteprix[1]);
-	$(".venteprix3").text(venteprix[2]);
-	$(".venteprix4").text(venteprix[3]);
 	//控制滑块
 	var prix = document.getElementsByClassName("move_prix")[0];
 	var input = document.getElementsByTagName("input")[0];

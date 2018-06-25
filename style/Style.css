@@ -937,19 +937,6 @@ canvas{
 	background-size:149px 149px;
 	
 }
-.venteprix{
-	position:absolute;
-	top:115px;
-}
-
-.venteprix tr td{
-	text-align:center;
-	height:40px;
-	width:149px;
-	line-height:40px;
-	font-size:25px;
-	color:white;
-}
 
 h3{
 	position:absolute;
@@ -1163,7 +1150,7 @@ h3{
 }
 
 .jeures p{
-	margin:2px;
+	margin:10px;
 }
 
 .sumidcadre{
@@ -1212,7 +1199,7 @@ h3{
 /*la zone de selection*/
 #ressourcechoix{
 	position:absolute;
-	top:180px;
+	top:170px;
 	left:0;
 	width:400px;
 	padding:0 25px;
@@ -1227,6 +1214,23 @@ h3{
 .ressource img{
 	width:50px;
 }
+
+#cours8_check{
+	margin-top:20px;
+	margin-left:80px;
+	background-color:lightgrey;
+	color:#333;
+	height:35px;
+	width:160px;
+	text-align:center;
+	font-size:20px;
+	
+}
+
+#cours8_check:hover{
+	background-color:#F4A460;
+}
+
 .regledujeu{
 	position:absolute;
 	right:10px;
