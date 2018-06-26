@@ -41,7 +41,6 @@ function winner(){
 	var max = score[1];
 	if (score[1] === score[2] && score[1] === score[3] && score[2] === score[3]){
 		max = 1;
-		console.log(max);
 	}
 	else {
 		if (score[1] < score[2]){

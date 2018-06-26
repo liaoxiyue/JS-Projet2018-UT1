@@ -150,10 +150,7 @@ $(function() {
 				}else{
 					nb = nb + 1;
 				}
-				console.log(nb);
 				valeur(nb);
-			}else{
-				return false;
 			}
 		}else{
 			var msg="Vous pouvez faire mieux！\n\n Vous voulez garder vos choix ?";
