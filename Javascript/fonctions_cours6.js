@@ -57,8 +57,6 @@ function winner(){
 			max = 1;
 		}
 	}
-	console.log(score);
-	console.log(max);
 //afficher le gagnant
 	var s = document.getElementById("score");
 	if (max === score[1]){
@@ -78,7 +76,6 @@ function winner(){
 function allowDrop(ev)
 {
 	dropid=ev.target.id;
-	console.log(dropid);
 	document.body.ondrop = function(event){
 	event.preventDefault();
 	event.stopPropagation();

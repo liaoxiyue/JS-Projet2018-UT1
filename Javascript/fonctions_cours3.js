@@ -123,6 +123,7 @@ $(document).ready(function(){
 			$("#Aladdin").fadeTo(0,0);
 			$("#AladdinHover").fadeTo(0,0);
 			$("#indication2").hide();
+			$("#indication1").hide();
 			end=true;
 		}
 	}
@@ -153,6 +154,7 @@ $(document).ready(function(){
 			$("#Aladdin").fadeTo(0,0);
 			$("#AladdinHover").fadeTo(0,0);
 			$("#indication2").hide();
+			$("#indication1").hide();
 			end=true;
 		}
 		}
