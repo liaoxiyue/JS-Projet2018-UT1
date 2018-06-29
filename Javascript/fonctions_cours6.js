@@ -56,6 +56,7 @@ function winner(){
 			max = 1;
 		}
 	}
+
 //afficher le gagnant
 	var s = document.getElementById("score");
 	if (max === score[1]){

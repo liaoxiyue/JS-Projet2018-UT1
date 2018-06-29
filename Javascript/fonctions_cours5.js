@@ -1,10 +1,17 @@
-//préserver le score de chaque film
+//préserver le score d'évaluation de chaque film
 var film = new Array();
-//保存推荐电影的分数
+//préserver le résultat de normalisation du score d'évaluation de chaque film
+var filmnor = new Array();
+//préserver le score final de chaque film 
 var note = new Array();
+//si le star est clique
+var starcliq = new Array();
+
 for(i=0;i<5;i++){
 	film[i]=0;
-	note[i]=0; 
+	filmnor[i]=0;
+	note[i]=0;
+starcliq[i]=0;	
 }
 
 //préserver la matrice de similarité film/film
@@ -28,18 +35,20 @@ $(function () {
         });
 
         $(objs).mouseout(function () {
-            var ix = $(this).parent().attr("rel");
-            if (ix == undefined)
+			var id=$(this).parent().attr("id");
+			var idn=Number(id.substr(1));
+            var ix = starcliq[idn];
+            if (ix == undefined || ix == 0)
                 ix = -1;
-            sets(ix, this);
+            sets(ix-1, this);
         });
 
         $(objs).click(function () {
             var ix = $(this).index();
-            $(this).parent().attr("rel", ix);
 			var id=$(this).parent().attr("id");
 			var idn=Number(id.substr(1));
 			film[idn]=ix +1;
+			starcliq[idn]=ix + 1;
             sets(ix, this);
 			$(this).parent().next("p").html(film[idn] + '.0');
         });
@@ -66,11 +75,27 @@ function nextpage(){
 		}
 		
 	}
-	//Calculer le score de recommandation normalisé
+		
 	if(evaluer=true){
-		for (i=0; i <4; i++){
+		norma_eva();
+		premier_score();		
+		document.getElementById("premier").style.display="none";
+		document.getElementById("deuxieme").style.display="block";
+	}	
+}
+
+//normaliser le score de l'evaluation 
+function norma_eva(){
+	for(i=0;i<4;i++){
+		filmnor[i+1] = (film[i+1]-3)/2;
+	}
+}	
+//obtenir le score le plus grand
+function premier_score(){
+	//Calculer le score de recommandation normalisé
+	for (i=0; i <4; i++){
 			for (j=0;j<4;j++){
-				note[i+1]=note[i+1]+film[j+1]*sim[i][j];
+				note[i+1]=note[i+1]+filmnor[j+1]*sim[i][j];
 			}
 			note[i+1]=note[i+1]/sommesim[i+1];
 		}
@@ -135,11 +160,7 @@ function nextpage(){
 				obj.src="Images/cours5/starwar.jpg";
 			}
 		}		
-		document.getElementById("premier").style.display="none";
-		document.getElementById("deuxieme").style.display="block";
-	}	
-}
-	
+}	
 //retourner à la dernière page 
 function lastpage(){
 	document.getElementById("deuxieme").style.display="none";
