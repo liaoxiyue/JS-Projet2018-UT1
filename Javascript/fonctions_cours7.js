@@ -33,9 +33,11 @@ $(function(){
 			
             if ( res < 0) {
                 obj.style.left = 0;
+				res = 0;
             }
             if ( res > 400) {
                 obj.style.left = 400 + "px";
+				res = 400;
             }
 			//montrer la position
 			input.value = Math.ceil(res / 400 * 500);
