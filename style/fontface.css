@@ -29,12 +29,6 @@
     url("../fonts/Novecentosanwide/36C215_3_0.woff") format("woff");
 }
 
-@font-face {
-    font-family: "Novecentosanwide-4";
-    src: url("../fonts/fonts/Novecentosanwide/36C215_4_0.eot") format("embedded-opentype"),
-    url("../fonts/Helvetica Neue Pro/fonts/Novecentosanwide/36C215_4_0.woff") format("woff"),
-    url("../fonts/Novecentosanwide/36C215_4_0.ttf") format("truetype");
-}
 
 @font-face{
     font-family:"Novecentosanwide-5";
